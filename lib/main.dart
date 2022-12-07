@@ -21,7 +21,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //home: HomeScreen(),
       //home: ExampleTwo(),
-      home: ExampleThree(),
+      //home: ExampleThree(),
+      initialRoute: HomeScreen.routeName,
+      routes: {
+        HomeScreen.routeName:(context)=>HomeScreen(),
+        ExampleTwo.routeName:(context)=>ExampleTwo(),
+        ExampleThree.routeName:(context)=>ExampleThree(),
+      },
     );
   }
 }

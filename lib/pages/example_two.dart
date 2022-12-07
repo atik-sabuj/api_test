@@ -1,8 +1,10 @@
+import 'package:api_test/pages/example_three.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ExampleTwo extends StatefulWidget {
+  static const String routeName = '/example_two';
   const ExampleTwo({Key? key}) : super(key: key);
 
   @override
@@ -36,6 +38,15 @@ class _ExampleTwoState extends State<ExampleTwo> {
       appBar: AppBar(
         centerTitle: true,
         title: Text('Api 2nd Page/Photos'),
+        actions: [
+          IconButton(
+            onPressed: () async {
+              Navigator.pushReplacementNamed(context, ExampleThree.routeName);
+            },
+            icon: const Icon(Icons.people),
+            // icon: const Text('Home')
+          )
+        ],
       ),
       body: Column(
         children: [

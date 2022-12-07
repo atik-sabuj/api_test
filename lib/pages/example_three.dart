@@ -1,9 +1,11 @@
 import 'package:api_test/models/user_model.dart';
+import 'package:api_test/pages/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ExampleThree extends StatefulWidget {
+  static const String routeName = '/example_three';
   const ExampleThree({Key? key}) : super(key: key);
 
   @override
@@ -34,6 +36,15 @@ class _ExampleThreeState extends State<ExampleThree> {
       appBar: AppBar(
         centerTitle: true,
         title: Text('Api 3rd Page/Users'),
+        actions: [
+          IconButton(
+            onPressed: () async {
+              Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+            },
+            icon: const Icon(Icons.home),
+            // icon: const Text('Home')
+          )
+        ],
       ),
       body: Column(
         children: [

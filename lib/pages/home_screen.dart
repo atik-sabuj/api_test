@@ -1,10 +1,12 @@
 import 'dart:convert';
 import 'package:api_test/models/PostsModel.dart';
+import 'package:api_test/pages/example_two.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 
 class HomeScreen extends StatefulWidget {
+  static const String routeName = '/home_screen';
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
@@ -32,7 +34,17 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Api 1st Page/Text'),),
+      appBar: AppBar(title: Text('Api 1st Page/Text'),
+        actions: [
+          IconButton(
+            onPressed: () async {
+              Navigator.pushReplacementNamed(context, ExampleTwo.routeName);
+            },
+            icon: const Icon(Icons.photo),
+            // icon: const Text('Home')
+          )
+        ],
+      ),
       body: Column(
         children: [
           Expanded(
