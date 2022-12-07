@@ -1,5 +1,6 @@
-import 'package:api_test/example_two.dart';
-import 'package:api_test/home_screen.dart';
+import 'package:api_test/pages/example_three.dart';
+import 'package:api_test/pages/example_two.dart';
+import 'package:api_test/pages/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       //home: HomeScreen(),
-      home: ExampleTwo(),
+      //home: ExampleTwo(),
+      home: ExampleThree(),
     );
   }
 }

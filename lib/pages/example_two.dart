@@ -35,7 +35,7 @@ class _ExampleTwoState extends State<ExampleTwo> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Api 2nd Page Test'),
+        title: Text('Api 2nd Page/Photos'),
       ),
       body: Column(
         children: [
