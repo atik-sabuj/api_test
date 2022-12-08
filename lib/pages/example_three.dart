@@ -1,4 +1,5 @@
 import 'package:api_test/models/user_model.dart';
+import 'package:api_test/pages/example_four.dart';
 import 'package:api_test/pages/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
@@ -39,9 +40,9 @@ class _ExampleThreeState extends State<ExampleThree> {
         actions: [
           IconButton(
             onPressed: () async {
-              Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+              Navigator.pushReplacementNamed(context, ExampleFour.routeName);
             },
-            icon: const Icon(Icons.home),
+            icon: const Icon(Icons.people_outline),
             // icon: const Text('Home')
           )
         ],

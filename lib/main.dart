@@ -1,3 +1,4 @@
+import 'package:api_test/pages/example_four.dart';
 import 'package:api_test/pages/example_three.dart';
 import 'package:api_test/pages/example_two.dart';
 import 'package:api_test/pages/home_screen.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         HomeScreen.routeName:(context)=>HomeScreen(),
         ExampleTwo.routeName:(context)=>ExampleTwo(),
         ExampleThree.routeName:(context)=>ExampleThree(),
+        ExampleFour.routeName:(context)=>ExampleFour(),
       },
     );
   }
