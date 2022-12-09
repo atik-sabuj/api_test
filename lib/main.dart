@@ -2,6 +2,7 @@ import 'package:api_test/pages/example_four.dart';
 import 'package:api_test/pages/example_three.dart';
 import 'package:api_test/pages/example_two.dart';
 import 'package:api_test/pages/home_screen.dart';
+import 'package:api_test/pages/last_example_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         ExampleTwo.routeName:(context)=>ExampleTwo(),
         ExampleThree.routeName:(context)=>ExampleThree(),
         ExampleFour.routeName:(context)=>ExampleFour(),
+        LastExampleScreen.routeName:(context)=>LastExampleScreen(),
       },
     );
   }
