@@ -1,4 +1,4 @@
-import 'package:api_test/pages/home_screen.dart';
+import 'package:api_test/pages/last_example_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -29,9 +29,9 @@ class _ExampleFourState extends State<ExampleFour> {
         actions: [
           IconButton(
             onPressed: () async {
-              Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+              Navigator.pushReplacementNamed(context, LastExampleScreen.routeName);
             },
-            icon: const Icon(Icons.home),
+            icon: const Icon(Icons.photo_album),
             // icon: const Text('Home')
           )
         ],

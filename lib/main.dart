@@ -24,6 +24,8 @@ class MyApp extends StatelessWidget {
       //home: HomeScreen(),
       //home: ExampleTwo(),
       //home: ExampleThree(),
+      //home: ExampleThree(),
+      //home: LastExampleScreen(),
       initialRoute: HomeScreen.routeName,
       routes: {
         HomeScreen.routeName:(context)=>HomeScreen(),
