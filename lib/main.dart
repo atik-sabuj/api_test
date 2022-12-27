@@ -28,16 +28,16 @@ class MyApp extends StatelessWidget {
       //home: ExampleThree(),
       //home: ExampleThree(),
       //home: LastExampleScreen(),
-      //home: SignUpScreen(),
-      home: UploadImageScreen(),
-/*      initialRoute: HomeScreen.routeName,
+/*      home: SignUpScreen(),
+      home: UploadImageScreen(),*/
+      initialRoute: HomeScreen.routeName,
       routes: {
         HomeScreen.routeName:(context)=>HomeScreen(),
         ExampleTwo.routeName:(context)=>ExampleTwo(),
         ExampleThree.routeName:(context)=>ExampleThree(),
         ExampleFour.routeName:(context)=>ExampleFour(),
         LastExampleScreen.routeName:(context)=>LastExampleScreen(),
-      },*/
+      },
     );
   }
 }
